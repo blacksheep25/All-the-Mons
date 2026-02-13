@@ -80,13 +80,13 @@ global.battleStartedPre = (startedPreEvent) => {
         let isGen1or2 = originalPokemon.hasLabels("gen1") || originalPokemon.hasLabels("gen2")
         //console.log("IsGen1or2: " + isGen1or2)
         if (isGen1or2) continue
-        let restrictedByPika = (originalPokemon.hasLabels("mythical") || originalPokemon.hasLabels("ultra_beast") || originalPokemon.hasLabels("paradox") || originalPokemon.hasLabels("legendary"))
-        if (restrictedByPika) {
-          if (!false) { // replace this `false` with a check if Pika Star was acquired
-            startedPreEvent.reason = Text.translate("kubejs.atm.catch_restrictions.pika_knowledge")
-            startedPreEvent.cancel()
-          }
-        }
+        // let restrictedByPika = (originalPokemon.hasLabels("mythical") || originalPokemon.hasLabels("ultra_beast") || originalPokemon.hasLabels("paradox") || originalPokemon.hasLabels("legendary"))
+        // if (restrictedByPika) {
+        //   if (!false) { // replace this `false` with a check if Pika Star was acquired
+        //     startedPreEvent.reason = Text.translate("kubejs.atm.catch_restrictions.pika_knowledge")
+        //     startedPreEvent.cancel()
+        //   }
+        // }
       }
     }
   }
